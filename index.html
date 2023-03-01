@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <!--double check to make sure this is correct-->
+    <head>
+        <title>Web Design Portfolio</title>
+        <!--why are UTF-8 and stylesheet red? Is something not properly linked?-->
+        <!--google says UTF-8 is not properly encoded. How would we encode this?-->
+        <!--your problem was that you were using a dash and not an equal sign. problem solved-->
+        <meta charset="UTF-8" />
+        <!--the css folder is not linking with index.html. Why?-->
+        <!--maybe the reason stylesheet is red is because the link rel doesn't exist?if so, how to make it exist?-->
+        <!--the href is correct. it's the link rel that's the problem-->
+        <!--same problem as above. use an equal sign, not a dash. solved-->
+        <link rel="stylesheet" href="./assets/style.css" />
+    </head>
+
+    <body>
+        <header class="header">
+            <!--inset the portfolio title inside this image-->
+            <img src="./assets/images/blue-ridge.jpg" alt="image of the Blue Ridge Mountains" />
+            <!--center this at the top inside a big colored strip-->
+            <!--a solid color strip looks too simple and amateur. make it more complex in design if possible. maybe make it an image instead? image added. format it to be behind the title-->
+            <h1>Portfolio: Sean P. Zweifel</h1>
+        </header>
+
+        <main>
+            <section>
+                <article>
+                    <h2>About Me</h2>
+                    <div>
+                        <p>
+                            This is sample text for my about me section
+                            <!--write a short paragraph about yourself. Maybe 5 to 8 sentences?-->
+                            <!--write about past experience, ambitions, goals, motivations, etc-->
+                            <!--give this a simple border as well-->
+                        </p>
+                    </div>
+                </article>
+            </section>
+        </main>
+
+        <!--these links will be links to future projects. give them actual names and make sure their orientation on the page looks nice-->
+        <!--turn these links into project cards. The first one has to be the largest-->
+        
+        <div class="projects">
+            <section class="card">
+                <div>Project 1</div>
+                <a href="#">Link 1</a>
+            </section>
+        </div>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+            <a href="#">Link 4</a>
+            <a href="#">Link 5</a>
+        
+
+
+
+
+    </body>
+</html>
