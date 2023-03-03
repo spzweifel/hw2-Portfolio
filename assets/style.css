@@ -3,19 +3,33 @@
 /*isolate this to only the main header. it's currently getting applied to everything using the header tag in html*/
 /*make sure you specify the font and things like that*/
 /*reduce the size of the image and get it inlaid behind the title*/
-header {
-    text-align: center;
-    image-size:   
+.header {
+    /*justify-content: center;*/
+    background:url("assets/images/blue-rige.jpg");
     font: 'serif';
     border-style: solid;
     border-width: 10px;
     border-color: darkgreen;
 }
 
+/*this adjusts the size of the image*/
+.image1 {
+  display: inline;
+  position: relative;
+  width: 989px;
+  height: 200px;
+}
+
+.h1 {
+  position: absolute;
+  top: 80px;
+  left: 300px;
+  text-align: center;
+}
 /*make the first card the largest with the others side by side in sideways rectangles*/
 /*when you hover over the cards, turn the cursor to the grab, create a shadowed inlaid background, and try to produce a shot textbox pop up with a short summary of the project*/
 
-.card {
+.card1 {
     border-style: solid;
     border-width: 1px;
     border-radius: 10px;
@@ -23,10 +37,38 @@ header {
     flex: 0 0 400px;
   }
   
-  .card header {
+  .card1 header {
     padding: 20px;
   }
 
-  .card p {
+  .card1 p {
     text-align: center;
   }
+
+  .project1 {
+    text-align: center;
+  }
+
+  /*play around with the buttons. Make them look nice*/
+  .button1 {
+    display: inline;
+  }
+
+  .button1:hover {
+    background-color: #772014;
+    color: #fff;
+  }
+
+  .button1:active {
+    font-size: 180%;
+    box-shadow: 0 0 10px #000 inset;
+  }
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+  }
+/*use this to adjust everything on the page as the webpage size changes*/
+@media screen and (max-width: 992px) {
+  
+}

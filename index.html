@@ -18,15 +18,15 @@
     <body>
         <header class="header">
             <!--inset the portfolio title inside this image-->
-            <img src="./assets/images/blue-ridge.jpg" alt="image of the Blue Ridge Mountains" />
+            <img style="display: inline" class="image1" src="./assets/images/blue-ridge.jpg" alt="image of the Blue Ridge Mountains" />
             <!--center this at the top inside a big colored strip-->
             <!--a solid color strip looks too simple and amateur. make it more complex in design if possible. maybe make it an image instead? image added. format it to be behind the title-->
-            <h1>Portfolio: Sean P. Zweifel</h1>
+            <h1 class="h1">Portfolio: Sean P. Zweifel</h1>
         </header>
 
         <main>
             <section>
-                <article>
+                <article class="aboutme">
                     <h2>About Me</h2>
                     <div>
                         <p>
@@ -44,19 +44,40 @@
         <!--turn these links into project cards. The first one has to be the largest-->
         
         <div class="projects">
-            <section class="card">
-                <div>Project 1</div>
+            <section class="card1">
+                <button class="button1">
+                <div class="project1">
+                    <h3>Project 1</h3>
+                </div>
                 <a href="#">Link 1</a>
+                </button>
             </section>
         </div>
+
+        <!--I want to use these class attributes to make boxes around these links. Lets not have a section for descriptions-->
+        <div class="container">
+            <div class="link2">
             <a href="#">Link 2</a>
+            </div>
+            <div class="link3">
             <a href="#">Link 3</a>
+            </div>
+            <div class="link4">
             <a href="#">Link 4</a>
+            </div>
+            <div class="link5">
             <a href="#">Link 5</a>
+            </div>
+        </div>
         
-
-
-
-
+        <footer class="footer">
+            <h3>How To Contact</h3>
+        </footer>
     </body>
 </html>
+
+
+
+<!--image and paragraph tag. need something containing both of these elements. maybe a div to act as the parent. we could give the div an id of container or image. display in css affects block or inline. we don't want inline. relative would allow us to move the text around but it won't go over the image. fixed would be like a footer. It'd float it above everything and you tell it where it gets stuck so that even when you scroll, it never disappears. Absolute takes it out of the normal flow and floats it above the other siblings in the parent as long as the parent is relative. if the image container is in position relative and paragraph is in position absolute. -->
+<!--img
+    p-->
