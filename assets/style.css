@@ -3,21 +3,70 @@
 /*isolate this to only the main header. it's currently getting applied to everything using the header tag in html*/
 /*make sure you specify the font and things like that*/
 /*reduce the size of the image and get it inlaid behind the title*/
-.header {
-    /*justify-content: center;*/
-    background:url("assets/images/blue-rige.jpg");
-    font: 'serif';
-    border-style: solid;
-    border-width: 10px;
-    border-color: darkgreen;
+* {
+  box-sizing: border-box;
 }
 
-/*this adjusts the size of the image*/
-.image1 {
-  display: inline;
-  position: relative;
-  width: 989px;
+body {
+  margin: 0;
+  padding: 0;
+}
+.main-header {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-wrap: flex;
+  background-image: url("./images/blue-ridge.jpg");
+  background-size: cover;
+  background-position: center;
+  font: "serif";
   height: 200px;
+}
+main {
+  max-width: 88%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.aboutme{
+border-top: solid 4px black;
+border-bottom: solid 4px black;
+margin: 5px 0;
+}
+
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.link {
+  min-height: 200px;
+  max-height: 200px;
+  background-size: 100%;
+  flex-basis: calc(50% - 1em);
+  margin: .5em;
+}
+
+.card1 {
+  min-height: 400px;
+  flex-basis: 100%;
+}
+
+.card2 {
+  flex-basis: 20%;
+}
+
+.card3 {
+  flex-basis: 20%;
+}
+
+.card4 {
+  flex-basis: 20%;
+}
+
+.card5 {
+  flex-basis: 20%;
 }
 
 .h1 {
@@ -26,49 +75,76 @@
   left: 300px;
   text-align: center;
 }
-/*make the first card the largest with the others side by side in sideways rectangles*/
+
+/*make the first card the largest with the others side by side in sideways rectangles */
 /*when you hover over the cards, turn the cursor to the grab, create a shadowed inlaid background, and try to produce a shot textbox pop up with a short summary of the project*/
-
+/
 .card1 {
-    border-style: solid;
-    border-width: 1px;
-    border-radius: 10px;
-    padding: 10px;
-    flex: 0 0 400px;
-  }
-  
-  .card1 header {
-    padding: 20px;
-  }
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 10px;
+  padding: 100px;
+  flex: 1 0 0;
+  display: block;
+} */
 
-  .card1 p {
-    text-align: center;
-  }
-
-  .project1 {
-    text-align: center;
-  }
-
-  /*play around with the buttons. Make them look nice*/
-  .button1 {
-    display: inline;
-  }
-
-  .button1:hover {
-    background-color: #772014;
-    color: #fff;
-  }
-
-  .button1:active {
-    font-size: 180%;
-    box-shadow: 0 0 10px #000 inset;
-  }
-
-  .container {
-    display: flex;
-    justify-content: space-between;
-  }
-/*use this to adjust everything on the page as the webpage size changes*/
-@media screen and (max-width: 992px) {
-  
+.card1 header {
+  background-color: #033307;
+  padding: 20px;
 }
+
+.card1 image {
+  width: 100%;
+  min-width: 100px;
+} */
+
+/*play around with the buttons. Make them look nice*/
+ .button1 {
+  display: block;
+  max-width: max-content;
+}
+
+.button1:hover {
+  background-color: #075e0e;
+  color: #fff;
+  border-color: #000;
+}
+
+.button1:active {
+  font-size: 180%;
+  box-shadow: 0 0 10px #000 inset;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-basis: 150px;
+  justify-content: space-between;
+}
+
+.link {
+  flex: 0 0 0px;
+  text-align: center;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.link header {
+  padding: 25px;
+  background-color: #033307;
+}
+
+.link img {
+  width: 100%;
+  min-width: 400px;
+}
+
+/*use this to adjust everything on the page as the webpage size changes*/
+/* @media screen and (max-width: 992px) {
+} */
