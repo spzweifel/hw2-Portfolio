@@ -9,6 +9,9 @@ MIT License
 
 # Link to application
 
+https://github.com/spzweifel/hw2-Portfolio
+http://127.0.0.1:5500/repos/hw2-Portfolio/index.html
+
 
 # screenshots
 
